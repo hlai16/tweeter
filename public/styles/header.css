@@ -9,9 +9,13 @@ header {
     justify-content: center;
     align-items: center;
     margin-top: 120px;
+    padding: 2em;
 }
 
 header img {
     margin-top: 2em;
 }
 
+.username {
+    padding-bottom: 1em;
+}

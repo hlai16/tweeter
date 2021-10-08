@@ -17,7 +17,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 !["Screenshot of Desktop/Laptop/iPad view with tweet in focus"](https://github.com/hlai16/tweeter/blob/master/docs/desktop-view-tweet.png?raw=true)
 
-
+!["Screenshot of Mobile view"](https://github.com/hlai16/tweeter/blob/master/docs/mobile-view.png?raw=true)
 
 ## Dependencies
 
