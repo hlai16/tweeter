@@ -39,10 +39,14 @@ main {
 @media only screen and (max-width: 768px) {
   .headerNav {
     background-color: orangered;
+    background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
   }
   .header-and-main {
     justify-content: center;
     align-content: center;
+  }
+  .tweetButton > i {
+      color: white;
   }
   main {
     margin: auto 1em;
