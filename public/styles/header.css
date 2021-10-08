@@ -1,0 +1,16 @@
+header {
+    height: 400px;
+    width: 100%;
+    background-color: orangered;
+    background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+
+header img {
+    margin-top: 2em;
+}

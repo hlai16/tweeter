@@ -32,6 +32,17 @@ const tweetsRoutes = require("./routes/tweets")(DataHelpers);
 // Mount the tweets routes at the "/tweets" path prefix:
 app.use("/tweets", tweetsRoutes);
 
+app.post("/tweets", function(req, res) {
+  if (!req.body.text) {
+    res.status(400).json({ error: 'invalid request: no data in POST body'});
+    return;
+  }
+  const templateVars = {
+    userTweets: req.body.text
+  };
+  res.redirect('/tweets');
+});
+
 app.listen(PORT, () => {
   console.log("Example app listening on port " + PORT);
 });

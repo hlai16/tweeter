@@ -1,0 +1,36 @@
+
+
+.headerNav {
+    background-color: #4056A1;
+    height: 120px;
+    width: 100vw;
+    color: #FFFFFF;
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.title {
+    font-family: sans-serif;
+    font-family: 'Bungee', cursive;
+}
+
+.tweetButton {
+    text-align: center;
+}
+
+.tweetButton > i {
+    color: orangered;
+    
+}
+
+.tweetButton > i {
+    animation: bounce;
+    animation-duration: 2s;
+}
+
+
+

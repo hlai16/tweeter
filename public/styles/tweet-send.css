@@ -1,0 +1,89 @@
+
+.error {
+    border: 5px solid red;
+    margin-top: 1rem;
+}
+
+.error > p {
+    margin: 20px 2rem;
+    color: red;
+    font-size: 1.5rem;
+}
+
+.tweetSend {
+    border: 5px solid #545149;
+    margin: 5rem auto;
+    padding: 1.5rem;
+
+}
+
+.tweetSend:hover,
+.tweetSend:focus {
+    box-shadow: 10px 10px 2px #98bac4;
+}
+
+.tweetHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile > img,
+.user-profile > .username {
+    margin: 15px;
+}
+
+.usesrname,
+.handle {
+    line-height: 20px;
+}
+
+.handle {
+    text-decoration: none;
+    color: silver;
+    font-family: sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.handle:focus,
+.handle:hover {
+    color: orangered;
+}
+
+.tweetBody {
+    border-bottom: 5px solid #545149;
+    padding-bottom: 1rem;
+}
+
+.tweetBody p {
+    padding-left: 1rem;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.tweetFooter {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tweetIcons {
+    margin-top: .5rem;
+}
+
+.tweetIcons i {
+    padding: 5px;
+    color: #4056A1;
+}
+
+.tweetIcons i:focus,
+.tweetIcons i:hover {
+    color: orangered;
+}
+

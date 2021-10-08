@@ -18,8 +18,50 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+main {
+  width: 90%;
+}
+
+/* Media Query */
+@media only screen and (max-width: 768px) {
+  .headerNav {
+    background-color: orangered;
+  }
+  .header-and-main {
+    justify-content: center;
+    align-content: center;
+  }
+  main {
+    margin: auto 1em;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .header-and-main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5em;
+  }
+  header {
+    margin: 2rem 4rem 2rem 2rem;
+    flex-shrink: 2;
+  }
+  main {
+    flex-grow: 2;
+    margin: 2rem 2rem 2rem 4rem;
+  }
+}
