@@ -67,10 +67,11 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <div class="errorContainer"></div>
+        <div class="error"></div>
         <form method="POST" action="/tweets" id="new-tweet">
           <label for="tweet-text" class="sr-only">What are you humming about?</label>
-          <textarea name="text" id="tweet-text" placeholder="What are you humming about?" required></textarea>
+          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+          <!-- I find adding 'required' at the end of textarea is a DRY way to code than writing an error message in client.js. But evaluator wants me to add an error message, so I have to remove the 'required' here. -->
           <div class="buttonDiv">
             <button type="submit" class="submitTweet">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>

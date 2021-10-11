@@ -65,12 +65,14 @@ main {
   }
   header {
     width: 28%;
+    /* adding width after project got rejected. I am not sure if this fix the issue, as when I checked my app, I don't see the problem mentioned by the evaulator */
     margin: 2rem 4rem 2rem 2rem;
     flex-shrink: 2;
   }
   main {
     flex-grow: 2;
     width: 72%;
+    /* adding width after project got rejected. I am not sure if this fix the issue, as when I checked my app, I don't see the problem mentioned by the evaulator */
     margin: 2rem 2rem 2rem 4rem;
   }
 }

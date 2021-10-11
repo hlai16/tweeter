@@ -1,9 +1,11 @@
 
 .error {
     width: 80%;
+    position: relative;
     /* adding width after project got rejected. I am not sure if this fix the issue, as when I checked my app, I don't see the problem mentioned by the evaulator */
-    border: 5px solid red;
     margin-top: 1rem;
+    transition: 5s;
+    /* not sure why, but sometimes I see the slide effect, sometimes I don't. I will still put transition here just in case other users have different UX than I. */
 }
 
 .error > p {

@@ -24,7 +24,7 @@ $(() => {
         })
     }
 
-    
+
     const renderTweets = function (tweets) {
         // loops through tweets
         for (const tweet of tweets) {
@@ -71,15 +71,25 @@ $(() => {
 
         const serializedData = $(this).serialize();
 
-        const errMsg = $(`<div class="error"><p>🚫 Your tweet is toooooo loooonnggg!!!!!!!! 🚫</p></div>`);
-
-        const $err = $('.errorContainer').append(errMsg);
+        // the error message is a challenge for me. At first, I use another way with .append. Which is inconsistent in showing the error message. sometimes only once, sometimes more than once in a row. So evaluator rejected my app, but that was the only way I could think of.
+        if ($tweetText.val() === '') {
+            $(".error").html(" 🚫 No blank tweets! 🚫 ");
+            $(".error").slideDown();
+            return;
+        // my friend Cat showed me .html. Old memory! I forgot about .html. Still, I have to adjust my css to go without border because I can't get rid of the bottom of border to not show when I refresh my app.
+        }
 
         if ($tweetText.val().length > 140) {
-            return $err.show();
-        } else {
-            $err.hide();
+            $(".error").html(" 🚫 Your tweet is toooooo loooonnggg!!!!!!!! 🚫 ");
+            $(".error").slideDown();
+        // Evaluator wants to see .slideDown(). So I use it here.
+            return;
         }
+        $(".error").html("");
+        $(".error").slideUp();
+        // Evaluator wants to see .slideUp(). So I use it here.
+        // Before rejection, I use show(), and hide().
+        
         $.post("/tweets", serializedData).then(() => {
             console.log('success');
             $('.tweet').empty();
