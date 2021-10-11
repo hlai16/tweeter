@@ -41,7 +41,9 @@ main {
     background-color: orangered;
     background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
   }
-  .header-and-main {
+  .header-and-main { /* I add this div so that I can follow the given design */
+    width: 100%;
+    /* adding width after project got rejected. I am not sure if this fix the issue, as when I checked my app, I don't see the problem mentioned by the evaulator */
     justify-content: center;
     align-content: center;
   }
@@ -58,14 +60,17 @@ main {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    /* adding width after project got rejected. I am not sure if this fix the issue, as when I checked my app, I don't see the problem mentioned by the evaulator */
     margin-top: 5em;
   }
   header {
+    width: 28%;
     margin: 2rem 4rem 2rem 2rem;
     flex-shrink: 2;
   }
   main {
     flex-grow: 2;
+    width: 72%;
     margin: 2rem 2rem 2rem 4rem;
   }
 }

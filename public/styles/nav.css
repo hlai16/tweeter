@@ -10,7 +10,8 @@
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    top: 0;
+    top: 0; 
+    /* top must be in 0 in order to have nav bar fixed to the top of the page. Tip from mentor. */
 }
 
 .title {

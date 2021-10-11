@@ -1,5 +1,7 @@
 
 .error {
+    width: 80%;
+    /* adding width after project got rejected. I am not sure if this fix the issue, as when I checked my app, I don't see the problem mentioned by the evaulator */
     border: 5px solid red;
     margin-top: 1rem;
 }
@@ -11,6 +13,8 @@
 }
 
 .tweetSend {
+    width: 100%;
+    /* adding width after project got rejected. I am not sure if this fix the issue, as when I checked my app, I don't see the problem mentioned by the evaulator */
     border: 5px solid #545149;
     margin: 5rem auto;
     padding: 1.5rem;
@@ -65,6 +69,7 @@
     padding-left: 1rem;
     font-weight: 600;
     word-wrap: break-word;
+    /* use word-wrap: break-word to do the wrap lengthy msgs as I see that the text input can go over the text box border. */
 }
 
 .tweetFooter {
